@@ -1,0 +1,89 @@
+ -----
+ Building Archiva
+ -----
+ -----
+ 2012-01-19
+ -----
+
+~~ Licensed to the Apache Software Foundation (ASF) under one
+~~ or more contributor license agreements.  See the NOTICE file
+~~ distributed with this work for additional information
+~~ regarding copyright ownership.  The ASF licenses this file
+~~ to you under the Apache License, Version 2.0 (the
+~~ "License"); you may not use this file except in compliance
+~~ with the License.  You may obtain a copy of the License at
+~~
+~~   http://www.apache.org/licenses/LICENSE-2.0
+~~
+~~ Unless required by applicable law or agreed to in writing,
+~~ software distributed under the License is distributed on an
+~~ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+~~ KIND, either express or implied.  See the License for the
+~~ specific language governing permissions and limitations
+~~ under the License.
+
+~~ NOTE: For help with the syntax of this file, see:
+~~ http://maven.apache.org/guides/mini/guide-apt-format.html
+
+Building Archiva
+
+ To build the very latest code available... 
+
+ [[1]] Check out the source code as described on the {{{../source-repository.html}Source Repository}} page.
+
+ [[2]] In the 'parent' directory, execute <<<mvn clean install>>> to build the parent pom. (only needed if we depend on a new parent)
+
+ [[3]] In the 'archiva' directory, execute <<<mvn clean install>>> to build the Archiva modules and distribution.
+
+ []
+
+ After the build completes, you can find the Archiva distribution in <<<archiva-jetty/target>>> and the Archiva
+ webapp in <<<archiva-modules/archiva-web/archiva-webapp/target>>>
+
+
+ Usually, it's that simple. :) Occasionally, Archiva may depend on a snapshot of another project such as
+ {{{http://archiva.apache.org/redback}Redback}}, and you may need to build that first, or configure a snapshot repository.
+ If you're having trouble building Archiva, ask on the {{{../mail-lists.html}Development mailing list}} and we'll point
+ you in the right direction.
+
+Documentation
+
+ The version-specific documentation for the latest version of Archiva can be found in <<<archiva/archiva-docs>>>,
+ and the top-level Archiva website --including the page you're reading now -- is in the <<<site>>> directory.
+
+ To work on the documentation, execute <<<mvn site:run>>> in one of these directories, and then visit
+ http://localhost:8080 to view pages as you edit them.  When you're done, submit a patch in the
+ {{{../issue-tracking.html}issue tracker}}.
+
+svn
+
+  You use checkout all trunks.
+
++--
+svn co https://svn.apache.org/repos/asf/archiva/all archiva-all
++--
+
+git clone
+
+  You can use git svn clone. See {{{http://git.apache.org/}Apache Documentation}}.
+
++--
+git clone git://github.com/apache/archiva.git; cd archiva ; sh ./init-git-svn.sh
+or trough https
+git clone https://github.com/apache/archiva.git; cd archiva ; sh ./init-git-svn.sh
++--
+
+Running Javascript webapp with tomcat-maven-plugin
+
+  You can use {{{http://tomcat.apache.org/maven-plugin.html}tomcat-maven-plugin}} to run the webapp without installing
+  the war in a container.
+  With maven3 in the top directory :
+
++--
+mvn tomcat7:run -pl :archiva-webapp -am (use mvnDebug if you want to attach a debugger)
+or
+sh ./t7.sh (use sh ./t7-debug.sh if you want to attach a debugger)
++--
+
+  Hit your browser : http://localhost:9091/archiva/index.html
+
