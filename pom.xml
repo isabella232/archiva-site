@@ -157,10 +157,9 @@
           </reportSet>
         </reportSets>
         <configuration>
-          <anonymousConnection>scm:svn:http://svn.apache.org/repos/asf/archiva/all</anonymousConnection>
-          <developerConnection>scm:svn:https://svn.apache.org/repos/asf/archiva/all</developerConnection>
-          <webAccessUrl>http://svn.apache.org/viewvc/archiva/</webAccessUrl>
-          <checkoutDirectoryName>archiva-all</checkoutDirectoryName>
+          <anonymousConnection>scm:git:https://git-wip-us.apache.org/repos/asf/archiva.git</anonymousConnection>
+          <developerConnection>scm:git:https://git-wip-us.apache.org/repos/asf/archiva.git</developerConnection>
+          <webAccessUrl>https://github.com/apache/archiva</webAccessUrl>
         </configuration>
       </plugin>
     </plugins>
