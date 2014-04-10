@@ -55,17 +55,8 @@ Documentation
  http://localhost:8080 to view pages as you edit them.  When you're done, submit a patch in the
  {{{../issue-tracking.html}issue tracker}}.
 
-svn
-
-  You use checkout all trunks.
-
-+--
-svn co https://svn.apache.org/repos/asf/archiva/all archiva-all
-+--
 
 git clone
-
-  You can use git svn clone. See {{{http://git.apache.org/}Apache Documentation}}.
 
 +--
 git clone git://github.com/apache/archiva.git; cd archiva ; sh ./init-git-svn.sh
