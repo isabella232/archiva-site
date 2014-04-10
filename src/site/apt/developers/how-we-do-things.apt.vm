@@ -35,11 +35,11 @@ How We Do Things
 
    See the tab with various builds: {{{https://builds.apache.org/view/A-D/view/Archiva/}Archiva tab}}
 
-   You can test fresh builds with downloading from this Jenkins job {{{https://builds.apache.org/archiva-all-maven-3.x-jdk-1.6/}archiva-all-maven-3.x-jdk-1.6}}:
+   You can test fresh builds with downloading from this Jenkins job {{{https://builds.apache.org/job/archiva-master-build/}archiva-master-build/}}:
 
-   * {{{https://builds.apache.org/job/archiva-all-maven-3.x-jdk-1.6/lastSuccessfulBuild/artifact/archiva-modules/archiva-web/archiva-webapp/target/archiva-webapp-${archivaCurrentDevVersion}.war}war webapp js}}
+   * {{{https://builds.apache.org/job/archiva-master-build/lastSuccessfulBuild/artifact/archiva-jetty/target/apache-archiva-${archivaCurrentDevVersion}-bin.zip}standalone with embeded jetty}} (unzip then cd bin;./archiva start running on 8080)
 
-   * {{{https://builds.apache.org/job/archiva-all-maven-3.x-jdk-1.6/lastSuccessfulBuild/artifact/archiva-jetty/target/apache-archiva-js-${archivaCurrentDevVersion}-bin.zip}standalone with embeded jetty}} (unzip then cd bin;./archiva start running on 8080)
+   * {{{https://builds.apache.org/job/archiva-master-build/lastSuccessfulBuild/artifact/archiva-modules/archiva-web/archiva-webapp/target/archiva-webapp-${archivaCurrentDevVersion}-SNAPSHOT.war}war webapp js}}
 
 
 
