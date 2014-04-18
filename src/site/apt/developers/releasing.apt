@@ -69,9 +69,14 @@ Archiva release process
 </profile>
 +-------------
 
-    Set your user credentials for the stage repo in the <servers> section of your settings.xml for vmbuild.staging
-    Execute mvn release:prepare (check that it has been properly tagged. the tag name must be.. archiva-[VERSION])
-    Then execute mvn release:perform
+    Set your user credentials for the stage repo in the <servers> section of
+    your settings.xml for {{archiva-repository.releases}}.
+
+    Execute mvn release:prepare (check that it has been properly tagged. the
+    tag name must be.. archiva-[VERSION]).
+
+    Next, execute mvn release:perform
+
     Download the uploaded files via wget:
 
 +-------------
