@@ -34,20 +34,20 @@
   <url>${siteUrl}</url>
 
   <properties>
-    <archivaLastSerieVersion>1.3.6</archivaLastSerieVersion>
-    <archivaLastSerieVersionDate>31 May 2013</archivaLastSerieVersionDate>
+    <archivaLastSerieVersion>1.3.8</archivaLastSerieVersion>
+    <archivaLastSerieVersionDate>18 April 2014</archivaLastSerieVersionDate>
     <archivaReleaseVersion>2.0.1</archivaReleaseVersion>
     <archivaReleaseDate>26th March 2014</archivaReleaseDate>
     <supportedVersions></supportedVersions>
-    <!-- Dropped 1.2.x support in December 2010. 1.3 - 1.3.5 unsupported due to sec. vulnerability -->
-    <unsupportedVersions>1.3.5,1.3.4,1.3.3,1.3.2,1.3.1,1.3,1.2.2,1.2.1,1.2,1.1.3,1.1.2,1.1.1,1.1,1.0.2,1.0.1,1.0
+    <!-- Dropped 1.2.x support in December 2010. 1.3 - 1.3.6 unsupported due to sec. vulnerability -->
+    <unsupportedVersions>1.3.6,1.3.5,1.3.4,1.3.3,1.3.2,1.3.1,1.3,1.2.2,1.2.1,1.2,1.1.3,1.1.2,1.1.1,1.1,1.0.2,1.0.1,1.0
     </unsupportedVersions>
     <siteUrl>http://archiva.apache.org/</siteUrl>
     <site.cache.path>${user.home}</site.cache.path>
     <siteFilePath>${site.cache.path}/archiva-sites/archiva-site-deploy</siteFilePath>
     <scmPubCheckoutDirectory>site-content</scmPubCheckoutDirectory>
 
-    <archivaCurrentDevVersion>2.0.2-SNAPSHOT</archivaCurrentDevVersion>
+    <archivaCurrentDevVersion>2.1.0-SNAPSHOT</archivaCurrentDevVersion>
     <newUiDocVersion>${archivaReleaseVersion}</newUiDocVersion>
     <svnUrl>https://svn.apache.org/repos/asf/archiva/site-content</svnUrl>
   </properties>
