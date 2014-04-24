@@ -37,7 +37,7 @@
     <div class="newsBox">
     <div class="hero-unit">
       <span class="bignumber badge badge-warning">NEW</span>
-      <p>Our code source is now using git, so you can propose pull requests using <a href="https://github.com/apache/archiva">github mirror</a></p>
+      <p><strong>Our code source is now using git, so you can propose pull requests using <a href="https://github.com/apache/archiva">github mirror</a></strong></p>
       <p><strong>26th March 2014 release of 2.0.1. See <a href="http://archiva.apache.org/docs/${archivaReleaseVersion}/tour/index.html">Quick Tour</a></strong></p>
     </div>
     </div>
