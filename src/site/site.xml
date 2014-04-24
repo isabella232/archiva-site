@@ -50,7 +50,7 @@
       <gitHub>
         <projectId>apache/archiva</projectId>
         <ribbonOrientation>right</ribbonOrientation>
-        <ribbonColor>black</ribbonColor>
+        <ribbonColor>orange</ribbonColor>
       </gitHub>
     </fluidoSkin>
 
