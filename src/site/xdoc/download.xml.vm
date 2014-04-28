@@ -157,7 +157,7 @@ under the License.
                 <thead>
                   <tr>
                     <th>Archiva ${archivaLastSerieVersion} </th>
-                    <th>Mirros</th>
+                    <th>Mirrors</th>
                     <th>Checksum</th>
                     <th>Signature</th>
                   </tr>
