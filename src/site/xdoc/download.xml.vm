@@ -165,15 +165,15 @@ under the License.
                 <tbody>
                   <tr>
                     <td>Archiva ${archivaLastSerieVersion} Standalone</td>
-                    <td><a href="[preferred]archiva/${archivaLastSerieVersion}/binaries/apache-archiva-${archivaLastSerieVersion}-bin.tar.gz">tar.gz</a></td>
-                    <td><a href="http://www.apache.org/dist/archiva/${archivaLastSerieVersion}/binaries/apache-archiva-${archivaLastSerieVersion}-bin.tar.gz.md5">md5</a></td>
-                    <td><a href="http://www.apache.org/dist/archiva/${archivaLastSerieVersion}/binaries/apache-archiva-${archivaLastSerieVersion}-bin.tar.gz.asc">asc</a></td>
+                    <td><a href="[preferred]archiva/${archivaLastSerieVersion}/binaries/apache-archiva-${archivaLastSerieVersion}.1-bin.tar.gz">tar.gz</a></td>
+                    <td><a href="http://www.apache.org/dist/archiva/${archivaLastSerieVersion}/binaries/apache-archiva-${archivaLastSerieVersion}.1-bin.tar.gz.md5">md5</a></td>
+                    <td><a href="http://www.apache.org/dist/archiva/${archivaLastSerieVersion}/binaries/apache-archiva-${archivaLastSerieVersion}.1-bin.tar.gz.asc">asc</a></td>
                   </tr>
                   <tr>
                     <td></td>
-                    <td><a href="[preferred]archiva/${archivaLastSerieVersion}/binaries/apache-archiva-${archivaLastSerieVersion}-bin.zip">zip</a></td>
-                    <td><a href="http://www.apache.org/dist/archiva/${archivaLastSerieVersion}/binaries/apache-archiva-${archivaLastSerieVersion}-bin.zip.md5">md5</a></td>
-                    <td><a href="http://www.apache.org/dist/archiva/${archivaLastSerieVersion}/binaries/apache-archiva-${archivaLastSerieVersion}-bin.zip.asc">asc</a></td>
+                    <td><a href="[preferred]archiva/${archivaLastSerieVersion}/binaries/apache-archiva-${archivaLastSerieVersion}.1-bin.zip">zip</a></td>
+                    <td><a href="http://www.apache.org/dist/archiva/${archivaLastSerieVersion}/binaries/apache-archiva-${archivaLastSerieVersion}.1-bin.zip.md5">md5</a></td>
+                    <td><a href="http://www.apache.org/dist/archiva/${archivaLastSerieVersion}/binaries/apache-archiva-${archivaLastSerieVersion}.1-bin.zip.asc">asc</a></td>
                   </tr>
                   <tr>
                     <td>Archiva ${archivaLastSerieVersion} WAR</td>
