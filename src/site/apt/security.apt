@@ -36,7 +36,7 @@ Security Vulnerabilities
   Apache Archiva is affected by a vulnerability in the version of the Struts
   library being used, which allows a malicious user to run code on the
   server remotely. More details about the vulnerability can be found at
-  {{http://struts.apache.org/2.3.x/docs/s2-016.html}}.
+  {{http://struts.apache.org/release/2.3.x/docs/s2-016.html}}.
 
   Versions Affected:
 
