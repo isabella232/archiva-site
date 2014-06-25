@@ -192,7 +192,7 @@
             #if ($archivaLastSerieVersion)
             <span class="expand" style="width: 200px; display: block; float: left;">
               <img src="images/collapsed.gif" width="7" height="7" alt="" />
-              <strong>Latest preview release:</strong>
+              <strong>Previous release:</strong>
             </span>
             <span class="button mainalign">
               <a class="btn btn-primary btn-medium" style="margin-bottom: 5px;" href="#" id="openDialogPreview">Get Archiva ${archivaLastSerieVersion} <span style="font-size:smaller;color:#F89406">${archivaLastSerieVersionDate}</span>
