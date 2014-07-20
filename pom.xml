@@ -36,8 +36,8 @@
   <properties>
     <archivaLastSerieVersion>1.3.9</archivaLastSerieVersion>
     <archivaLastSerieVersionDate>1 July 2014</archivaLastSerieVersionDate>
-    <archivaReleaseVersion>2.0.1</archivaReleaseVersion>
-    <archivaReleaseDate>26th March 2014</archivaReleaseDate>
+    <archivaReleaseVersion>2.1.0</archivaReleaseVersion>
+    <archivaReleaseDate>20th July 2014</archivaReleaseDate>
     <supportedVersions></supportedVersions>
     <!-- Dropped 1.2.x support in December 2010. 1.3 - 1.3.6 unsupported due to sec. vulnerability -->
     <unsupportedVersions>1.3.6,1.3.5,1.3.4,1.3.3,1.3.2,1.3.1,1.3,1.2.2,1.2.1,1.2,1.1.3,1.1.2,1.1.1,1.1,1.0.2,1.0.1,1.0
