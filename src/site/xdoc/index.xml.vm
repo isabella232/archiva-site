@@ -34,13 +34,21 @@
 
   </head>
   <body>
-    <div class="newsBox">
-    <div class="hero-unit">
-      <span class="bignumber badge badge-warning">NEW</span>
-      <p><strong>Our code source is now using git, so you can propose pull requests using <a href="https://github.com/apache/archiva">github mirror</a></strong></p>
-      <p><strong>20th July 2014 release of 2.1.0 See <a href="http://archiva.apache.org/docs/${archivaReleaseVersion}/tour/index.html">Quick Tour</a></strong></p>
+    <div class="row-fluid">
+      <div class="span8">
+        <div class="newsBox">
+          <div class="hero-unit">
+            <span class="bignumber badge badge-warning">NEW</span>
+            <p><strong>Our code source is now using git, so you can propose pull requests using <a href="https://github.com/apache/archiva">github mirror</a></strong></p>
+            <p><strong>20th July 2014 release of 2.1.0 See <a href="http://archiva.apache.org/docs/${archivaReleaseVersion}/tour/index.html">Quick Tour</a></strong></p>
+          </div>
+        </div>
+      </div>
+      <div class="span4">
+        <a href="http://bit.ly/1n9YlQT" target="_blank"><img src="http://bit.ly/1q8k3IZ" width="125" height="125" alt="I'm Attending ApacheCon Europe 2014! Join me!" title="I'm Attending ApacheCon Europe 2014! Join me!" border="0"/></a>
+      </div>
     </div>
-    </div>
+
 
     <div id="carousel-main">
 
