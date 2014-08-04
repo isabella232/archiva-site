@@ -196,7 +196,7 @@ under the License.
 
       <subsection name="Previous Versions">
         <p>
-          More releases are available in the <a href="http://archive.apache.org/dist/archiva/binaries/">Apache Archiva Archives</a>
+          More releases are available in the <a href="http://archive.apache.org/dist/archiva/">Apache Archiva Archives</a>
           or prior to the graduation from Maven, in the <a href="http://archive.apache.org/dist/maven/binaries/">Apache Maven Archives</a>.
         </p>
       </subsection>
