@@ -30,7 +30,7 @@ under the License.
         <table>
           <tr>
             <td><b>JDK</b></td>
-            <td>1.6 or above</td>
+            <td>1.7 or above</td>
           </tr>
           <tr>
             <td><b>No minimum requirement</b></td>
