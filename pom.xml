@@ -46,7 +46,7 @@
     <site.cache.path>${user.home}</site.cache.path>
     <scmPubCheckoutDirectory>site-content</scmPubCheckoutDirectory>
 
-    <archivaCurrentDevVersion>2.1.1-SNAPSHOT</archivaCurrentDevVersion>
+    <archivaCurrentDevVersion>2.1.2-SNAPSHOT</archivaCurrentDevVersion>
     <newUiDocVersion>${archivaReleaseVersion}</newUiDocVersion>
     <svnUrl>https://svn.apache.org/repos/asf/archiva/site-content</svnUrl>
   </properties>
