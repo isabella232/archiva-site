@@ -47,11 +47,11 @@
         <projectId>6670</projectId>
         <widget>stats</widget>
       </ohloh>
-      <gitHub>
+      <!--gitHub>
         <projectId>apache/archiva</projectId>
         <ribbonOrientation>right</ribbonOrientation>
         <ribbonColor>orange</ribbonColor>
-      </gitHub>
+      </gitHub-->
     </fluidoSkin>
 
   </custom>
