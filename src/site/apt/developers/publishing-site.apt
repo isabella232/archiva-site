@@ -38,9 +38,9 @@ Publishing the Archiva Site
 
   To edit and publish the site, do the following:
 
-    [[1]] Checkout the source code from Subversion (if you follow the
-          instructions in {{{./building.html} Building Archiva}}, you will
-          already have it.
+    [[1]] Checkout the source code from Git (if you follow the
+          instructions in {{{./building.html} Building Archiva}}, you know
+          how to have it.
 
     [[2]] Make edits and check them using <<<mvn site>>> or <<<mvn
           site:run>>> until satisfied.
