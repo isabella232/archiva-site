@@ -53,83 +53,83 @@
           <!-- Carousel items -->
           <div class="carousel-inner">
             <div class="item active">
-              <img alt="" src="http://archiva.apache.org/docs/${archivaReleaseVersion}/images/ldap-configuration.png" height="120px"/>
+              <img alt="" src="https://archiva.apache.org/docs/${archivaReleaseVersion}/images/ldap-configuration.png" height="120px"/>
               <div class="carousel-caption">
                 <p>Dynamic LDAP Configuration.</p>
-                <p><a href="http://archiva.apache.org/docs/${archivaReleaseVersion}/adminguide/redback-runtime-configuration.html">View all.</a></p>
+                <p><a href="https://archiva.apache.org/docs/${archivaReleaseVersion}/adminguide/redback-runtime-configuration.html">View all.</a></p>
               </div>
             </div>
             <div class="item">
-              <img alt="" src="http://archiva.apache.org/docs/${archivaReleaseVersion}/images/ldap-group-roles-mapping.png"/>
+              <img alt="" src="https://archiva.apache.org/docs/${archivaReleaseVersion}/images/ldap-group-roles-mapping.png"/>
               <div class="carousel-caption">
                 <p>Dynamic LDAP Group-Roles mapping Configuration.</p>
-                <p><a href="http://archiva.apache.org/docs/${archivaReleaseVersion}/adminguide/redback-runtime-configuration.html">View all.</a></p>
+                <p><a href="https://archiva.apache.org/docs/${archivaReleaseVersion}/adminguide/redback-runtime-configuration.html">View all.</a></p>
               </div>
             </div>
             <div class="item">
-              <img alt="" src="http://archiva.apache.org/docs/${archivaReleaseVersion}/images/tour/project-info.png"/>
+              <img alt="" src="https://archiva.apache.org/docs/${archivaReleaseVersion}/images/tour/project-info.png"/>
               <div class="carousel-caption">
                 <p>Informative display for artifacts stored in the repository.</p>
-                <p><a href="http://archiva.apache.org/docs/${archivaReleaseVersion}/tour/index.html">View all.</a></p>
-                <p><a href="http://archiva.apache.org/docs/${archivaReleaseVersion}/index.html">View new documentation.</a></p>
+                <p><a href="https://archiva.apache.org/docs/${archivaReleaseVersion}/tour/index.html">View all.</a></p>
+                <p><a href="https://archiva.apache.org/docs/${archivaReleaseVersion}/index.html">View new documentation.</a></p>
               </div>
             </div>
             <div class="item">
-              <img alt="" src="http://archiva.apache.org/docs/${archivaReleaseVersion}/images/tour/search-form.png"/>
+              <img alt="" src="https://archiva.apache.org/docs/${archivaReleaseVersion}/images/tour/search-form.png"/>
               <div class="carousel-caption">
                 <p>User-friendly browsing interface, and powerful search functionalities.</p>
-                <p><a href="http://archiva.apache.org/docs/${archivaReleaseVersion}/tour/index.html">View all.</a></p>
-                <p><a href="http://archiva.apache.org/docs/${archivaReleaseVersion}/index.html">View new documentation.</a></p>
+                <p><a href="https://archiva.apache.org/docs/${archivaReleaseVersion}/tour/index.html">View all.</a></p>
+                <p><a href="https://archiva.apache.org/docs/${archivaReleaseVersion}/index.html">View new documentation.</a></p>
               </div>
             </div>
             <div class="item">
-              <img alt="" src="http://archiva.apache.org/docs/${archivaReleaseVersion}/images/tour/search-results.png"/>
+              <img alt="" src="https://archiva.apache.org/docs/${archivaReleaseVersion}/images/tour/search-results.png"/>
               <div class="carousel-caption">
                 <p>Filterable search results.</p>
-                <p><a href="http://archiva.apache.org/docs/${archivaReleaseVersion}/tour/index.html">View all.</a></p>
-                <p><a href="http://archiva.apache.org/docs/${archivaReleaseVersion}/index.html">View new documentation.</a></p>
+                <p><a href="https://archiva.apache.org/docs/${archivaReleaseVersion}/tour/index.html">View all.</a></p>
+                <p><a href="https://archiva.apache.org/docs/${archivaReleaseVersion}/index.html">View new documentation.</a></p>
               </div>
             </div>
             <div class="item">
-              <img alt="" src="http://archiva.apache.org/docs/${archivaReleaseVersion}/images/tour/browse.png"/>
+              <img alt="" src="https://archiva.apache.org/docs/${archivaReleaseVersion}/images/tour/browse.png"/>
               <div class="carousel-caption">
                 <p>Browse interface.</p>
-                <p><a href="http://archiva.apache.org/docs/${archivaReleaseVersion}/tour/index.html">View all.</a></p>
-                <p><a href="http://archiva.apache.org/docs/${archivaReleaseVersion}/index.html">View new documentation.</a></p>
+                <p><a href="https://archiva.apache.org/docs/${archivaReleaseVersion}/tour/index.html">View all.</a></p>
+                <p><a href="https://archiva.apache.org/docs/${archivaReleaseVersion}/index.html">View new documentation.</a></p>
               </div>
             </div>
 
 
             <div class="item">
-              <img alt="" src="http://archiva.apache.org/docs/${archivaReleaseVersion}/images/tour/remote-proxy-cache.png"/>
+              <img alt="" src="https://archiva.apache.org/docs/${archivaReleaseVersion}/images/tour/remote-proxy-cache.png"/>
               <div class="carousel-caption">
                 <p>Drag &#38; drop remote proxies ordering.</p>
-                <p><a href="http://archiva.apache.org/docs/${archivaReleaseVersion}/tour/index.html">View all.</a></p>
-                <p><a href="http://archiva.apache.org/docs/${archivaReleaseVersion}/index.html">View new documentation.</a></p>
+                <p><a href="https://archiva.apache.org/docs/${archivaReleaseVersion}/tour/index.html">View all.</a></p>
+                <p><a href="https://archiva.apache.org/docs/${archivaReleaseVersion}/index.html">View new documentation.</a></p>
               </div>
             </div>
             <div class="item">
-              <img alt="" src="http://archiva.apache.org/docs/${archivaReleaseVersion}/images/tour/upload-files.png"/>
+              <img alt="" src="https://archiva.apache.org/docs/${archivaReleaseVersion}/images/tour/upload-files.png"/>
               <div class="carousel-caption">
                 <p>Drag &#38; drop upload artifacts via UI.</p>
-                <p><a href="http://archiva.apache.org/docs/${archivaReleaseVersion}/tour/index.html">View all.</a></p>
-                <p><a href="http://archiva.apache.org/docs/${archivaReleaseVersion}/index.html">View new documentation.</a></p>
+                <p><a href="https://archiva.apache.org/docs/${archivaReleaseVersion}/tour/index.html">View all.</a></p>
+                <p><a href="https://archiva.apache.org/docs/${archivaReleaseVersion}/index.html">View new documentation.</a></p>
               </div>
             </div>
             <div class="item">
-              <img alt="" src="http://archiva.apache.org/docs/${archivaReleaseVersion}/images/tour/graphical-admin.png"/>
+              <img alt="" src="https://archiva.apache.org/docs/${archivaReleaseVersion}/images/tour/graphical-admin.png"/>
               <div class="carousel-caption">
                 <p>Comprehensive web-based administration interface.</p>
-                <p><a href="http://archiva.apache.org/docs/${archivaReleaseVersion}/tour/index.html">View all.</a></p>
-                <p><a href="http://archiva.apache.org/docs/${archivaReleaseVersion}/index.html">View new documentation.</a></p>
+                <p><a href="https://archiva.apache.org/docs/${archivaReleaseVersion}/tour/index.html">View all.</a></p>
+                <p><a href="https://archiva.apache.org/docs/${archivaReleaseVersion}/index.html">View new documentation.</a></p>
               </div>
             </div>
             <div class="item">
-              <img alt="" src="http://archiva.apache.org/docs/${archivaReleaseVersion}/images/proxy-connectors-rules.png"/>
+              <img alt="" src="https://archiva.apache.org/docs/${archivaReleaseVersion}/images/proxy-connectors-rules.png"/>
               <div class="carousel-caption">
                 <p>Bulk update of your black/while list when fetching remote repositories.</p>
-                <p><a href="http://archiva.apache.org/docs/${archivaReleaseVersion}/tour/index.html">View all.</a></p>
-                <p><a href="http://archiva.apache.org/docs/${archivaReleaseVersion}/index.html">View new documentation.</a></p>
+                <p><a href="https://archiva.apache.org/docs/${archivaReleaseVersion}/tour/index.html">View all.</a></p>
+                <p><a href="https://archiva.apache.org/docs/${archivaReleaseVersion}/index.html">View new documentation.</a></p>
               </div>
             </div>
 
