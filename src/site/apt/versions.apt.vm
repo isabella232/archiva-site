@@ -41,15 +41,7 @@ Archiva Documentation
 ~~ TODO: have more specific links than Documentation, and find a better link for developer reference
 
 #if ($archivaLastSerieVersion)
-* Last serie 1.3.x Release: Archiva ${archivaLastSerieVersion}
-
-  The current stable release of Archiva 1.3.x is <${archivaLastSerieVersion}>.
-
-    * {{{./docs/${archivaLastSerieVersion}/release-notes.html} Release Notes}}
-
-    * {{{./docs/${archivaLastSerieVersion}/index.html} Documentation}}
-
-    * {{{./ref/${archivaLastSerieVersion}/index.html} Developer Reference}}
+* Last serie 1.x Release is not supported anymore as it has known security vulnerabilities.
 
 ~~ TODO: have more specific links than Documentation, and find a better link for developer reference
 #end
