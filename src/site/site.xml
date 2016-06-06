@@ -75,7 +75,9 @@
       <item name="Security"             href="/security.html"/>
       <item name="Documentation" href="">
         <item name="Release ${archivaReleaseVersion}" href="http://archiva.apache.org/docs/${archivaReleaseVersion}/"/>
+        <!--
         <item name="Preview ${archivaLastSerieVersion}" href="http://archiva.apache.org/docs/${archivaLastSerieVersion}/"/>
+        -->
         <item name="Dev ${archivaCurrentDevVersion}" href="http://archiva.apache.org/docs/${archivaCurrentDevVersion}/"/>
       </item>
     </menu>
