@@ -58,5 +58,7 @@ Archiva Documentation
 
 * Unsupported Releases
 
+   << Previous versions have known security issues so it's recommended to upgrade to last ${archivaReleaseVersion} >>
+ 
 ~~ rough list of unsupported version because materials (RNotes,Docs,Refs are not yet available)
  $unsupportedVersions
