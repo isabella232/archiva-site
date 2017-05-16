@@ -25,7 +25,7 @@
   <parent>
     <groupId>org.apache.archiva</groupId>
     <artifactId>archiva-parent</artifactId>
-    <version>17-SNAPSHOT</version>
+    <version>18</version>
   </parent>
   <name>Archiva</name>
   <artifactId>archiva-site</artifactId>
@@ -38,16 +38,15 @@
     <archivaLastSerieVersion>1.3.9</archivaLastSerieVersion>
     <archivaLastSerieVersionDate>1 July 2014</archivaLastSerieVersionDate>
     -->
-    <archivaReleaseVersion>2.2.2</archivaReleaseVersion>
-    <archivaReleaseDate>15th April 2017</archivaReleaseDate>
+    <archivaReleaseVersion>2.2.3</archivaReleaseVersion>
+    <archivaReleaseDate>16th May 2017</archivaReleaseDate>
+    <archivaCurrentDevVersion>3.0.0-SNAPSHOT</archivaCurrentDevVersion>
     <supportedVersions></supportedVersions>
-    <!-- Dropped 1.2.x support in December 2010. 1.3 - 1.3.6 unsupported due to sec. vulnerability -->
     <unsupportedVersions>1.X</unsupportedVersions>
     <siteUrl>http://archiva.apache.org/</siteUrl>
     <site.cache.path>${user.home}</site.cache.path>
     <scmPubCheckoutDirectory>site-content</scmPubCheckoutDirectory>
 
-    <archivaCurrentDevVersion>3.0.0-SNAPSHOT</archivaCurrentDevVersion>
     <newUiDocVersion>${archivaReleaseVersion}</newUiDocVersion>
     <svnUrl>https://svn.apache.org/repos/asf/archiva/site-content</svnUrl>
   </properties>

@@ -46,11 +46,11 @@ Security Vulnerabilities
 
   Versions Affected:
 
-    * All versions before 2.2.2
+    * All versions before 2.2.3
 
   Mitigation:
 
-    * Upgrade to {{{./download.cgi} Archiva 2.2.2 or higher}}, where additional measures are taken to verify
+    * Upgrade to {{{./download.html} Archiva 2.2.3 or higher}}, where additional measures are taken to verify
       the origin of REST requests.
 
 

@@ -59,9 +59,9 @@ Documentation
 git clone
 
 +--
-git clone git://github.com/apache/archiva.git; cd archiva ; sh ./init-git-svn.sh
+git clone git://github.com/apache/archiva.git
 or trough https
-git clone https://github.com/apache/archiva.git; cd archiva ; sh ./init-git-svn.sh
+git clone https://github.com/apache/archiva.git
 +--
 
 Running Javascript webapp with tomcat-maven-plugin
