@@ -118,7 +118,7 @@ under the License.
                 <td><a href="[preferred]archiva/${archivaReleaseVersion}/binaries/apache-archiva-${archivaReleaseVersion}-bin.tar.gz">tar.gz</a></td>
                 <td><a href="http://www.apache.org/dist/archiva/${archivaReleaseVersion}/binaries/apache-archiva-${archivaReleaseVersion}-bin.tar.gz.md5">md5</a></td>
                 <td><a href="http://www.apache.org/dist/archiva/${archivaReleaseVersion}/binaries/apache-archiva-${archivaReleaseVersion}-bin.tar.gz.sha1">sha1</a></td>
-                <td><a href="http://www.apache.org/dyn/closer.cgi/archiva/${archivaReleaseVersion}/binaries/apache-archiva-${archivaReleaseVersion}-bin.tar.gz.asc">asc</a></td>
+                <td><a href="http://www.apache.org/dist/archiva/${archivaReleaseVersion}/binaries/apache-archiva-${archivaReleaseVersion}-bin.tar.gz.asc">asc</a></td>
               </tr>
               <tr>
                 <td></td>
