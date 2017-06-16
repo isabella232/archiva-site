@@ -73,7 +73,7 @@ Running Javascript webapp with tomcat-maven-plugin
 +--
 mvn tomcat7:run -pl :archiva-webapp -am (use mvnDebug if you want to attach a debugger)
 or
-sh ./t7.sh (use sh ./t7-debug.sh if you want to attach a debugger)
+sh ./jetty.sh (use sh ./jetty-debug.sh if you want to attach a debugger)
 +--
 
   Hit your browser : http://localhost:9091/archiva/index.html
