@@ -64,14 +64,14 @@ or trough https
 git clone https://github.com/apache/archiva.git
 +--
 
-Running Javascript webapp with tomcat-maven-plugin
+Running Javascript webapp with jetty-maven-plugin
 
-  You can use {{{http://tomcat.apache.org/maven-plugin.html}tomcat-maven-plugin}} to run the webapp without installing
+  You can use {{{https://www.eclipse.org/jetty/documentation/current/maven-and-jetty.html}jetty-maven-plugin}} to run the webapp without installing
   the war in a container.
   With maven3 in the top directory :
 
 +--
-mvn tomcat7:run -pl :archiva-webapp -am (use mvnDebug if you want to attach a debugger)
+mvn jetty:run -pl :archiva-webapp -am (use mvnDebug if you want to attach a debugger)
 or
 sh ./jetty.sh (use sh ./jetty-debug.sh if you want to attach a debugger)
 +--
