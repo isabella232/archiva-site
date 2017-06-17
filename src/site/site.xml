@@ -23,7 +23,7 @@
   <skin>
     <groupId>org.apache.maven.skins</groupId>
     <artifactId>maven-fluido-skin</artifactId>
-    <version>1.4</version>
+    <version>1.6</version>
   </skin>
 
 <!-- do not use fluido ga pattern use analytics.js instead-->
@@ -57,6 +57,7 @@
   </custom>
   <body>
       <head>
+        <![CDATA[
         <!-- Google Analytics -->
         <script src='//www.google-analytics.com/analytics.js'></script>
         <script>
@@ -66,6 +67,7 @@
           ga('send', 'pageview');
 
         </script>
+        ]]>
     </head>
     <menu name="Introduction">
       <item name="About"                href="/index.html" />
@@ -107,10 +109,12 @@
     </menu>
 
     <footer>
+      <![CDATA[
       <div class="row pull-left">Apache ${project.name}, ${project.name}, Apache, the Apache feather logo, and the Apache ${project.name} project logos are trademarks of The Apache Software Foundation.</div>
       <div class="row pull-left">
         <a href="${project.url}privacy-policy.html">Privacy Policy</a>
       </div>
+      ]]>
     </footer>
   </body>
 </project>
