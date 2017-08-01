@@ -2,7 +2,7 @@
  Building Archiva
  -----
  -----
- 2012-01-19
+ 2017-08-01
  -----
 
 ~~ Licensed to the Apache Software Foundation (ASF) under one
@@ -46,13 +46,44 @@ Building Archiva
  If you're having trouble building Archiva, ask on the {{{../mail-lists.html}Development mailing list}} and we'll point
  you in the right direction.
 
+Merging Github Pull requests
+
+ When somebody creats a pull request for archiva on github an email is sent to the developer list.
+
+ First review the changes and check for style and impact of the changes. And check the build on the jenkins
+ server for this pull request (archiva-master-build-pr-builder).
+
+ If you have not added the github repository to your git config do the following:
+
++--
+git remote add github https://github.com/apache/archiva.git
++--
+
+ When review and jenkins build are OK, then checkout the pull request branch:
+
++--
+ID=30 # Set this to the number of the pull request
+git fetch github pull/${ID}/head:pr-${ID}
+git checkout pr-${ID}
+mvn clean install
++--
+
+  And merge into the master. If a JIRA ticket is opened for this, add the ticket number to the commit message.
+
++--
+git checkout master
+git merge pr-${ID}
+mvn clean install
+git push # If all is going fine
++--
+
 Documentation
 
  The version-specific documentation for the latest version of Archiva can be found in <<<archiva/archiva-docs>>>,
  and the top-level Archiva website --including the page you're reading now -- is in the <<<site>>> directory.
 
  To work on the documentation, execute <<<mvn site:run>>> in one of these directories, and then visit
- http://localhost:8080 to view pages as you edit them.  When you're done, submit a patch in the
+ {{http://localhost:8080}} to view pages as you edit them.  When you're done, submit a patch in the
  {{{../issue-tracking.html}issue tracker}}.
 
 
@@ -71,10 +102,10 @@ Running Javascript webapp with jetty-maven-plugin
   With maven3 in the top directory :
 
 +--
-mvn jetty:run -pl :archiva-webapp -am (use mvnDebug if you want to attach a debugger)
+mvn jetty:run -pl :archiva-webapp -am # use mvnDebug if you want to attach a debugger
 or
-sh ./jetty.sh (use sh ./jetty-debug.sh if you want to attach a debugger)
+sh ./jetty.sh # use sh ./jetty-debug.sh if you want to attach a debugger
 +--
 
-  Hit your browser : http://localhost:9091/archiva/index.html
+  Hit your browser: {{http://localhost:9091/archiva/index.html}}
 
