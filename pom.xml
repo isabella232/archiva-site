@@ -57,8 +57,8 @@
   </organization>
 
   <scm>
-    <connection>scm:git:https://git-wip-us.apache.org/repos/asf/archiva-site.git</connection>
-    <developerConnection>scm:git:https://git-wip-us.apache.org/repos/asf/archiva-site.git</developerConnection>
+    <connection>scm:git:https://gitbox.apache.org/repos/asf/archiva-site.git</connection>
+    <developerConnection>scm:git:https://gitbox.apache.org/repos/asf/archiva-site.git</developerConnection>
     <url>https://github.com/apache/archiva-site</url>
   </scm>
 
