@@ -45,8 +45,13 @@
       </twitter-->
       <ohloh>
         <projectId>6670</projectId>
-        <widget>stats</widget>
+        <widget>thin-badge</widget>
       </ohloh>
+      <gitHub>
+        <projectId>apache/archiva</projectId>
+        <ribbonOrientation>right</ribbonOrientation>
+        <ribbonColor>gray</ribbonColor>
+      </gitHub>
       <!--gitHub>
         <projectId>apache/archiva</projectId>
         <ribbonOrientation>right</ribbonOrientation>
@@ -111,8 +116,13 @@
     <footer>
       <![CDATA[
       <div class="row pull-left">Apache ${project.name}, ${project.name}, Apache, the Apache feather logo, and the Apache ${project.name} project logos are trademarks of The Apache Software Foundation.</div>
-      <div class="row pull-left">
+      <div class="row">
+        &nbsp;
+      </div>
+      <div class="row">
+      <p>
         <a href="${project.url}privacy-policy.html">Privacy Policy</a>
+        </p>
       </div>
       ]]>
     </footer>

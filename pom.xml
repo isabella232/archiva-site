@@ -156,8 +156,8 @@
           </reportSet>
         </reportSets>
         <configuration>
-          <anonymousConnection>scm:git:https://git-wip-us.apache.org/repos/asf/archiva.git</anonymousConnection>
-          <developerConnection>scm:git:https://git-wip-us.apache.org/repos/asf/archiva.git</developerConnection>
+          <anonymousConnection>scm:git:https://github.com/apache/archiva.git</anonymousConnection>
+          <developerConnection>scm:git:https://gitbox.apache.org/repos/asf/archiva.git</developerConnection>
           <webAccessUrl>https://github.com/apache/archiva</webAccessUrl>
         </configuration>
       </plugin>

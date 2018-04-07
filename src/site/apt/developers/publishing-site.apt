@@ -34,7 +34,7 @@ Publishing the Archiva Site
 
   The site displayed at the root of {{http://archiva.apache.org}} (where
   you are reading this) has its source code in Git at
-  {{https://git-wip-us.apache.org/repos/asf/archiva-site.git}}.
+  {{https://gitbox.apache.org/repos/asf/archiva-site.git}}.
 
   To edit and publish the site, do the following:
 
@@ -69,7 +69,7 @@ mvn site-deploy
 
   The documentation displayed under the subdirectories of
   {{http://archiva.apache.org/docs/}} has its source code in Git at
-  {{https://git-wip-us.apache.org/repos/asf/archiva.git}} directory archiva-docs, which
+  {{https://gitbox.apache.org/repos/asf/archiva.git}} directory archiva-docs, which
   is part of the main project checkout.
 
   The instructions for managing the documentation is the same as for the main

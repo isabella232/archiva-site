@@ -325,7 +325,7 @@
           <table>
             <tr>
               <th> </th>
-              <th>Mirrors</th>
+              <th>File-Type</th>
               <th>Checksum</th>
               <th>Signature</th>
             </tr>

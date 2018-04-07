@@ -48,34 +48,12 @@ Building Archiva
 
 Merging Github Pull requests
 
- When somebody creats a pull request for archiva on github an email is sent to the developer list.
+ When somebody creates a pull request for archiva on github an email is sent to the developer list.
 
  First review the changes and check for style and impact of the changes. And check the build on the jenkins
  server for this pull request (archiva-master-build-pr-builder).
 
- If you have not added the github repository to your git config do the following:
-
-+--
-git remote add github https://github.com/apache/archiva.git
-+--
-
- When review and jenkins build are OK, then checkout the pull request branch:
-
-+--
-ID=30 # Set this to the number of the pull request
-git fetch github pull/${ID}/head:pr-${ID}
-git checkout pr-${ID}
-mvn clean install
-+--
-
-  And merge into the master. If a JIRA ticket is opened for this, add the ticket number to the commit message.
-
-+--
-git checkout master
-git merge pr-${ID}
-mvn clean install
-git push # If all is going fine
-+--
+ We have moved to gitbox, so merging the PR should be done on the github web site by using the PR merge features.
 
 Documentation
 
@@ -108,4 +86,21 @@ sh ./jetty.sh # use sh ./jetty-debug.sh if you want to attach a debugger
 +--
 
   Hit your browser: {{http://localhost:9091/archiva/index.html}}
+
+Running the selenium tests (Web UI tests) locally
+
+  The selenium tests use docker containers for the selenium and browser installation. To run the tests locally you should have docker installed on
+  your developer machine.
+  The docker container can be built locally or pulled from the apachearchiva Dockerhub repository.
+  To start the docker container, run the following script:
+
++--
+  ./src/ci/scripts/container_webtest.sh start
++--
+
+  The UI tests can be run with:
+
++--
+mvn clean install -DmaxWaitTimeInMs=2000 -DseleniumRemote=true -Pci-server -Pit-js -Pchrome -pl :archiva-webapp-test
++--
 
