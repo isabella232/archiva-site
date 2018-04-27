@@ -268,11 +268,19 @@
         Archiva is distributed under the <a href="http://www.apache.org/licenses/">Apache License, version 2.0</a>
       </p>
     </section>
-    <section name="Thanks">
-      <p>
-        We would like to thank all the <a href="http://www.apache.org/foundation/thanks.html">sponsors that provide financial assistance to the Apache Software Foundation</a>.
-        For more information on how you can support the foundation, see the <a href="http://www.apache.org/foundation/sponsorship.html">sponsorship</a> page.
-      </p>
+    <section name="Apache Software Foundation">
+        <p>
+            Archiva is part of the Apache software Foundation. We would like to thank all the <a href="http://www.apache.org/foundation/thanks.html">sponsors that provide financial assistance to the Apache Software Foundation</a>.
+            For more information on how you can support the foundation, see the <a href="http://www.apache.org/foundation/sponsorship.html">sponsorship</a> page.
+        </p>
+        <p>
+            <a href="https://www.apache.org/events/current-event.html">
+                <img src="https://www.apache.org/events/current-event-234x60.png" alt="Apache Events" style="vertical-align: text-top"/>
+            </a>
+        </p>
+        <p> You can also attend <a href="https://www.apache.org/events/current-event.html">Apache Events</a>: don't hesitate to ask on the <a href="mail-lists.html">Archiva User mailing list</a>
+            if Archiva team members will be there, it can be a great opportunity to meet them.
+        </p>
     </section>
 
     <section name="Resources">
@@ -306,8 +314,8 @@
         <h3>Articles, Presentations and Tutorials</h3>
         <ul>
           <li>
-            <a href="http://www.adictosaltrabajo.com/tutoriales/tutoriales.php?pagina=archiva">Archiva 1.1.1 Tutorial in Spanish!</a> - Video also available <a
-            href="http://www.adictosaltrabajo.com/detalle-noticia.php?noticia=61">here</a> - (Ángel García Jerez; September 2008)
+            <a href="http://www.adictosaltrabajo.com/tutoriales/tutoriales.php?pagina=archiva">Archiva 1.1.1 Tutorial in Spanish!</a> - Video also available 
+            <a href="http://www.adictosaltrabajo.com/detalle-noticia.php?noticia=61">here</a> - (Ángel García Jerez; September 2008)
           </li>
         </ul>
       </div>
