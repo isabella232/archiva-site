@@ -48,7 +48,9 @@
     <scmPubCheckoutDirectory>site-content</scmPubCheckoutDirectory>
 
     <newUiDocVersion>${archivaReleaseVersion}</newUiDocVersion>
-    <svnUrl>https://svn.apache.org/repos/asf/archiva/site-content</svnUrl>
+
+    <siteRepositoryUrl>scm:git:https://gitbox.apache.org/repos/asf/archiva-web-content-INVALID.git</siteRepositoryUrl>
+
   </properties>
 
   <organization>
@@ -65,7 +67,7 @@
   <distributionManagement>
     <site>
       <id>apache.website.svnpub</id>
-      <url>scm:svn:${svnUrl}</url>
+      <url>${siteRepositoryUrl}</url>
     </site>
   </distributionManagement>
 
@@ -146,11 +148,11 @@
         <reportSets>
           <reportSet>
             <reports>
-              <report>cim</report>
-              <report>mailing-list</report>
-              <report>issue-tracking</report>
-              <report>license</report>
-              <report>project-team</report>
+              <report>ci-management</report>
+              <report>mailing-lists</report>
+              <report>issue-management</report>
+              <report>licenses</report>
+              <report>team</report>
               <report>scm</report>
             </reports>
           </reportSet>
@@ -165,41 +167,43 @@
   </reporting>
 
   <profiles>
+    <!--
+    This runs a sparse git checkout for the web site content repository that contains only the doc directory.
+    The profile is activated only, if the checkout directory does not exist.
+    The executor runs a shell script.
+    -->
     <profile>
-      <id>setup-checkout</id>
+      <id>site-checkout</id>
       <activation>
         <file>
-          <missing>site-content</missing>
+          <missing>${scmPubCheckoutDirectory}</missing>
         </file>
       </activation>
       <build>
         <plugins>
           <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-antrun-plugin</artifactId>
-            <version>1.7</version>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>exec-maven-plugin</artifactId>
+            <version>1.6.0</version>
+            <inherited>false</inherited>
             <executions>
               <execution>
                 <id>prepare-checkout</id>
                 <phase>pre-site</phase>
                 <goals>
-                  <goal>run</goal>
+                  <goal>exec</goal>
                 </goals>
                 <configuration>
-                  <target>
-                    <property name="plugin_classpath" refid="maven.plugin.classpath"/> 
-                    <ant antfile="${basedir}/build.xml" />
-                  </target>                  
+                  <executable>checkoutSite.sh</executable>
+                  <workingDirectory>${project.basedir}</workingDirectory>
+                  <arguments>
+                    <argument>-d</argument>
+                    <argument>${scmPubCheckoutDirectory}</argument>
+                    <argument>${siteRepositoryUrl}</argument>
+                  </arguments>
                 </configuration>
               </execution>
             </executions>
-            <dependencies>
-              <dependency>
-                <groupId>org.tmatesoft.svnkit</groupId>
-                <artifactId>svnkit-cli</artifactId>
-                <version>${svnkit.version}</version>
-              </dependency>
-            </dependencies>
           </plugin>
         </plugins>
       </build>
