@@ -27,7 +27,18 @@ The script is interactive, it asks you to confirm the publish after generation o
 
 All arguments are appended to the mvn calls.
 
-=== Run the mvn steps manually
+=== Run the steps manually
+
+==== Checkout the site-content directory
+
+ git clone <PATH TO archiva-web-content.git> site-content --no-checkout
+ git -C site-content config core.sparsecheckout true
+ git -C site-content config user.name <YOUR NAME>
+ git -C site-content config user.email <YOUR MAILADDRESS>
+
+Copy the +git-sparse-checkout-pattern+ file to +site-content/.git/info/sparse-checkout+
+
+ git -C site-content checkout --
 
 ==== Building the pages
 
