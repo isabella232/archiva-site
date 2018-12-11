@@ -38,6 +38,11 @@ fi
 echo ">>>> Creating site and reports <<<<" 
 mvn clean site site:stage "$@"
 
+if [ $? -ne 0 ]; then
+  echo ">>>> Error occurred. Stopping now. <<<<"
+  exit 1
+fi
+
 echo "*****************************************"
 echo ">>>> Finished the site stage process <<<<"
 echo "> You can check the content in the folder target/staging or by opening the following url"

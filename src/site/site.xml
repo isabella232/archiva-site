@@ -52,11 +52,7 @@
         <ribbonOrientation>right</ribbonOrientation>
         <ribbonColor>gray</ribbonColor>
       </gitHub>
-      <!--gitHub>
-        <projectId>apache/archiva</projectId>
-        <ribbonOrientation>right</ribbonOrientation>
-        <ribbonColor>orange</ribbonColor>
-      </gitHub-->
+
     </fluidoSkin>
 
   </custom>

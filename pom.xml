@@ -49,7 +49,7 @@
 
     <newUiDocVersion>${archivaReleaseVersion}</newUiDocVersion>
 
-    <siteRepositoryUrl>scm:git:https://gitbox.apache.org/repos/asf/archiva-web-content-INVALID.git</siteRepositoryUrl>
+    <siteRepositoryUrl>scm:git:https://gitbox.apache.org/repos/asf/archiva-web-content.git</siteRepositoryUrl>
 
   </properties>
 
