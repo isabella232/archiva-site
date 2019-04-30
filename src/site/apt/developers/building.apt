@@ -43,7 +43,7 @@ Building Archiva
 
  Usually, it's that simple. :) Occasionally, Archiva may depend on a snapshot of another project such as
  {{{http://archiva.apache.org/redback}Redback}}, and you may need to build that first, or configure a snapshot repository.
- If you're having trouble building Archiva, ask on the {{{../mail-lists.html}Development mailing list}} and we'll point
+ If you're having trouble building Archiva, ask on the {{{../mailing-lists.html}Development mailing list}} and we'll point
  you in the right direction.
 
 Merging Github Pull requests

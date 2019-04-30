@@ -74,7 +74,7 @@
       <item name="About"                href="/index.html" />
       <item name="Downloads"            href="/download.html" />
       <item name="Versions"             href="/versions.html"/>
-      <item name="Mailing Lists"        href="/mail-lists.html"/>
+      <item name="Mailing Lists"        href="/mailing-lists.html"/>
       <item name="Security"             href="/security.html"/>
       <item name="Documentation" href="">
         <item name="Release ${archivaReleaseVersion}" href="http://archiva.apache.org/docs/${archivaReleaseVersion}/"/>

@@ -54,7 +54,7 @@ Getting Involved in the Archiva Project
   work-arounds.  If the issue is new, you should consider submitting a report.
   
   * <<Search the mailing lists>>\
-  Search the mailing lists. Look {{{./mail-lists.html}here}} for a list of
+  Search the mailing lists. Look {{{./mailing-lists.html}here}} for a list of
   Archiva mailing lists.  If you cannot find everything you need, ask a
   question on the appropriate list.
 
@@ -76,7 +76,7 @@ Getting Involved in the Archiva Project
   As with any open source project, there are several ways you can help:
 
   * <<Join a mailing list>>\
-    Join a {{{./mail-lists.html}mailing list}} and answer other user's questions.
+    Join a {{{./mailing-lists.html}mailing list}} and answer other user's questions.
     You can also meet up with developers and users on <<<#archiva>>> on <<<irc.freenode.net>>>
 
   * <<Fix bugs>>\
