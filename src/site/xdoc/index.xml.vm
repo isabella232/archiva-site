@@ -39,7 +39,9 @@
         <div class="newsBox">
           <div class="hero-unit">
             <span class="bignumber badge badge-warning">NEW</span>
-            <p><strong>${archivaReleaseDate} release of ${archivaReleaseVersion} is ready for download <href a="http://archiva.apache.org/download.html"/> </strong>. We recommend to update to the new version.</p> 
+            <p><strong>${archivaReleaseDate}: The new Apache Archiva release version ${archivaReleaseVersion} is ready for download <href a="http://archiva.apache.org/download.html"/> </strong>. 
+               This is a bugfix release. Please have a look at the <a href="http://archiva.apache.org/docs/2.2.4/release-notes.html">release notes</a> for further information. 
+               As this release contains <strong>security fixes</strong>, we recommend to update to the new version immediately. </p> 
           </div>
         </div>
       </div>
