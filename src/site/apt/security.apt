@@ -37,6 +37,42 @@ Security Vulnerabilities
 %{toc|fromDepth=2|toDepth=2}
 
 
+* {CVE-2019-0213}: Apache Archiva XSS may be stored in central UI configuration
+
+  It may be possible to store malicious XSS code into central configuration entries, i.e. the logo URL.
+  The vulnerability is considered as minor risk, as only users with admin role can change the configuration,
+  or the communication between the browser and the Archiva server must be compromised. 
+
+  Versions Affected:
+
+    * All versions before 2.2.4
+
+  Mitigation:
+
+    * Upgrade to {{{./download.cgi} Archiva 2.2.4 or higher}}
+ 
+    * Make sure, that communication between Archiva server and browser is secure by using TLS and only certain users
+       are assigned to admin role.
+
+
+* {CVE-2019-0214}: Apache Archiva arbitrary file write and delete on the server
+
+  It is possible to write files to the archiva server at arbitrary locations by using the artifact upload mechanism.
+  Existing files can be overwritten, if the archiva run user has appropriate permission on the filesystem for the target file.
+
+  Versions Affected:
+
+    * All versions before 2.2.4
+
+  Mitigation:
+
+    * It is highly recommended to upgrade to {{{./download.cgi} Archiva 2.2.4 or higher}}, where additional validations are implemented
+       to prevent such malicious parameter values.
+
+    * As intermediate action you may reduce the number of users that are allowed to upload to archiva and make sure, that the archiva run user 
+        may have only write permission to the directories needed.
+
+
 * {CVE-2017-5657}: Apache Archiva CSRF vulnerabilities for various REST endpoints
 
   Several REST service endpoints of Apache Archiva are not protected against CSRF attacks.

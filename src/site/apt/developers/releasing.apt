@@ -92,7 +92,9 @@ gpg -v archiva-jetty-${ARCHV}-bin.zip.asc
 +-------------
 git checkout archiva-${ARCHV} # Checkout the release version of archiva
 cd archiva-doc
-mvn site-deploy
+mvn site:site
+mvn site:stage  # Check the content in target/staging
+cp -r target/staging/* <web-content-git>/docs/${ARCHV}/ # Copy to the git web content repository
 +-------------
 
     If the vote doesn't pass, the documentation will need to be removed from the server for redeployment.
@@ -120,7 +122,7 @@ sh ./release-script-redback-svn.sh $REDBV ${RELEASE_URL}/
   After the vote has passed, move the files from dist dev to dist release:
 
 +-------------
-svn mv https://dist.apache.org/repos/dist/dev/archiva/${ARCHV} https://dist.apache.org/repos/dist/relase/archiva/
+svn mv https://dist.apache.org/repos/dist/dev/archiva/${ARCHV} https://dist.apache.org/repos/dist/release/archiva/
 
 # Move also the POM and Redback and Redback Component releases, if there are new ones.
 +-------------
@@ -130,7 +132,7 @@ svn mv https://dist.apache.org/repos/dist/dev/archiva/${ARCHV} https://dist.apac
   Mark the appropriate release version in JIRA as complete.
 
 
-  Update the archiva site (https://svn.apache.org/repos/asf/archiva/site/) for the versions and release notes URL:
+  Update the archiva site (https://gitbox.apache.org/repos/asf/archiva-site.git) for the versions and release notes URL:
 
   Mostly these properties of the pom.xml should be edited:
 
@@ -140,7 +142,7 @@ svn mv https://dist.apache.org/repos/dist/dev/archiva/${ARCHV} https://dist.apac
   <archivaCurrentDevVersion>3.0.0-SNAPSHOT</archivaCurrentDevVersion>
 +-------------
 
-  Run <<<mvn site:run>>> and verify the changes. Commit your changes. Then run <<<mvn site-deploy>>>.
+  Run <<deploySite.sh>>. The script will give the information where to check the content locally and asks before pushing to the remote repository.
 
   Once mirroring done (can be 24H): remove previous versions from https://dist.apache.org/repos/dist/release/archiva/
 
