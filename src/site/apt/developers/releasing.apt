@@ -40,13 +40,13 @@ Archiva release process
    </server>
 +-------------
 
- [[3]] If there are changes in the parent pom, release parent pom – https://gitbox.apache.org/repos/asf/archiva-parent.git
+ [[3]] If there are changes in the parent pom, release parent pom – {{https://gitbox.apache.org/repos/asf/archiva-parent.git}}
 
    * mvn release:prepare (verify that it has been properly tagged)
 
    * mvn release:perform (verify that it has been deployed correctly in the staging repo)
 
- [[4]] Update the parent pom version of archiva – https://gitbox.apache.org/repos/asf/archiva.git
+ [[4]] Update the parent pom version of archiva – {{https://gitbox.apache.org/repos/asf/archiva.git}}
 
    * change the parent pom version to the archiva-parent version that has just been released
 
@@ -54,9 +54,10 @@ Archiva release process
 
  [[5]] Update the release notes and the site.xml for version changes in archiva-docs
 
- [[6]] Verify that the webapp-tests are building successfully. Since it is in a separate profile but inside the Archiva source tree, it will not be released but will still be included in the release tag. If some tests are failing, comment it out first so that only the passing tests are executed when the webapp-tests module are built from the tag.
+ [[6]] Verify that the webapp-tests are building successfully. \
+     Since it is in a separate profile but inside the Archiva source tree, it will not be released but will still be included in the release tag. If some tests are failing, comment it out first so that only the passing tests are executed when the webapp-tests module are built from the tag.
 
- [[7]] Release archiva
+ [[7]] Release archiva.\
     You should have a GPG agent running (preferred), and confirm it works by running "gpg -ab" (type some text and press Ctrl-D).
     If you do not have a GPG agent running, make sure that you have the "apache-release" profile set in your settings.xml as shown below.
 
@@ -82,10 +83,21 @@ export MAVEN_OPTS="-Xmx6144m -XX:MaxPermSize=512m" # It may work with less heap,
 export JAVA_OPT="-Xmx6144m -XX:MaxPermSize=512m" 
 +-------------
 
-    Execut mvn release:prepare (check that it has been properly tagged. the
-    tag name must be.. archiva-[VERSION]).
+    Execute 
 
-    Next, execute mvn release:perform
++-------------
+mvn release:prepare
++-------------
+    Check that it has been properly tagged. The tag name must be.. archiva-[VERSION].
+
+    If all works fine, execute 
+
++-------------
+mvn release:perform
++-------------
+
+    The perform task will push to the repository, if it was successful. After successfully running this task,
+    it's not possible to roll back.
 
     Download the uploaded files via wget:
 
@@ -142,7 +154,7 @@ svn mv https://dist.apache.org/repos/dist/dev/archiva/${ARCHV} https://dist.apac
   Mark the appropriate release version in JIRA as complete.
 
 
-  Update the archiva site (https://gitbox.apache.org/repos/asf/archiva-site.git) for the versions and release notes URL:
+  Update the archiva site ({{https://gitbox.apache.org/repos/asf/archiva-site.git}}) for the versions and release notes URL:
 
   Mostly these properties of the pom.xml should be edited:
 
@@ -154,7 +166,7 @@ svn mv https://dist.apache.org/repos/dist/dev/archiva/${ARCHV} https://dist.apac
 
   Run <<deploySite.sh>>. The script will prepare the site locally and provide information how to check the content before pushing to the remote repository.
 
-  Once mirroring done (can be 24H): remove previous versions from https://dist.apache.org/repos/dist/release/archiva/
+  Once mirroring done (can be 24H): remove previous versions from {{https://dist.apache.org/repos/dist/release/archiva/}}
 
   Publish the reference docs (sh ./deploySite.sh in the archiva-modules directory) from the release tag.
   You may have to exclude the archiva-webapp module to do this.
@@ -167,7 +179,9 @@ svn mv https://dist.apache.org/repos/dist/dev/archiva/${ARCHV} https://dist.apac
 
   * announce@apache.org
 
-  If there are security incidents that should be published after release, please check the Apache information http://www.apache.org/security/committers.html
+  [] 
+
+  If there are security incidents that should be published after release, please check the Apache information {{http://www.apache.org/security/committers.html}}
   for further actions.
 
 
