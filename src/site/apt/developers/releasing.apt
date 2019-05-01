@@ -40,13 +40,13 @@ Archiva release process
    </server>
 +-------------
 
- [[3]] If there are changes in the parent pom, release parent pom – https://svn.apache.org/repos/asf/archiva/parent
+ [[3]] If there are changes in the parent pom, release parent pom – https://gitbox.apache.org/repos/asf/archiva-parent.git
 
    * mvn release:prepare (verify that it has been properly tagged)
 
    * mvn release:perform (verify that it has been deployed correctly in the staging repo)
 
- [[4]] Update the parent pom version of archiva – https://svn.apache.org/repos/asf/archiva/trunk
+ [[4]] Update the parent pom version of archiva – https://gitbox.apache.org/repos/asf/archiva.git
 
    * change the parent pom version to the archiva-parent version that has just been released
 
@@ -72,7 +72,17 @@ Archiva release process
     Set your user credentials for the stage repo in the <servers> section of
     your settings.xml for {{archiva-repository.releases}}.
 
-    Execute mvn release:prepare (check that it has been properly tagged. the
+    Prepare your environment:
+    For Archiva 2.x you have to use JDK 7 and set memory settings.
+
++-------------
+export JAVA_HOME=<PATH_TO_JDK7>
+export PATH=$JAVA_HOME/bin:$PATH
+export MAVEN_OPTS="-Xmx6144m -XX:MaxPermSize=512m" # It may work with less heap, but this is a safe value
+export JAVA_OPT="-Xmx6144m -XX:MaxPermSize=512m" 
++-------------
+
+    Execut mvn release:prepare (check that it has been properly tagged. the
     tag name must be.. archiva-[VERSION]).
 
     Next, execute mvn release:perform
@@ -80,7 +90,7 @@ Archiva release process
     Download the uploaded files via wget:
 
 +-------------
-ARCHV="2.2.3" # Enter the new archiva version
+ARCHV="2.2.4" # Enter the new archiva version
 RELEASE_URL="http://archiva-repository.apache.org/archiva/repository/archiva-releases-stage"
 wget ${RELEASE_URL}/org/apache/archiva/archiva-jetty/${ARCHV}/archiva-jetty-${ARCHV}-bin.tar.gz
 # Verify the signatures:
@@ -137,17 +147,17 @@ svn mv https://dist.apache.org/repos/dist/dev/archiva/${ARCHV} https://dist.apac
   Mostly these properties of the pom.xml should be edited:
 
 +-------------
-  <archivaReleaseVersion>2.2.3</archivaReleaseVersion>
-  <archivaReleaseDate>16th May 2017</archivaReleaseDate>
+  <archivaReleaseVersion>2.2.4</archivaReleaseVersion>
+  <archivaReleaseDate>16th May 2019</archivaReleaseDate>
   <archivaCurrentDevVersion>3.0.0-SNAPSHOT</archivaCurrentDevVersion>
 +-------------
 
-  Run <<deploySite.sh>>. The script will give the information where to check the content locally and asks before pushing to the remote repository.
+  Run <<deploySite.sh>>. The script will prepare the site locally and provide information how to check the content before pushing to the remote repository.
 
   Once mirroring done (can be 24H): remove previous versions from https://dist.apache.org/repos/dist/release/archiva/
 
   Publish the reference docs (sh ./deploySite.sh in the archiva-modules directory) from the release tag.
-  You may have to exclude the archiva-webapp module to do this, and will require MAVEN_OPTS=-Xmx256m. You may need to use Maven 2.2.1 instead of Maven 3.x for this.
+  You may have to exclude the archiva-webapp module to do this.
 
   Send out an announcement of the release to:
 
@@ -156,4 +166,8 @@ svn mv https://dist.apache.org/repos/dist/dev/archiva/${ARCHV} https://dist.apac
   * users@maven.apache.org
 
   * announce@apache.org
+
+  If there are security incidents that should be published after release, please check the Apache information http://www.apache.org/security/committers.html
+  for further actions.
+
 
