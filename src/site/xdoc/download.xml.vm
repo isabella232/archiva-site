@@ -25,7 +25,7 @@ under the License.
   </properties>
   <body>
     <section name="Download Apache Archiva ${archivaReleaseVersion}">
-      <p>Archiva is distributed under the <a href="http://www.apache.org/licenses/">Apache License, version 2.0</a>.</p>
+      <p>Archiva is distributed under the <a href="https://www.apache.org/licenses/">Apache License, version 2.0</a>.</p>
       <subsection name="System Requirements">
         <table>
           <tr>
@@ -86,7 +86,7 @@ under the License.
 
         <p>
           You may also consult the
-          <a href="http://www.apache.org/mirrors/">complete list of
+          <a href="https://www.apache.org/mirrors/">complete list of
             mirrors.</a>
         </p>
 
@@ -116,30 +116,30 @@ under the License.
               <tr>
                 <td>Archiva ${archivaReleaseVersion} Standalone</td>
                 <td><a href="[preferred]archiva/${archivaReleaseVersion}/binaries/apache-archiva-${archivaReleaseVersion}-bin.tar.gz">tar.gz</a></td>
-                <td><a href="http://www.apache.org/dist/archiva/${archivaReleaseVersion}/binaries/apache-archiva-${archivaReleaseVersion}-bin.tar.gz.sha256">sha256</a></td>
-                <td><a href="http://www.apache.org/dist/archiva/${archivaReleaseVersion}/binaries/apache-archiva-${archivaReleaseVersion}-bin.tar.gz.sha512">sha512</a></td>
-                <td><a href="http://www.apache.org/dist/archiva/${archivaReleaseVersion}/binaries/apache-archiva-${archivaReleaseVersion}-bin.tar.gz.asc">asc</a></td>
+                <td><a href="https://www.apache.org/dist/archiva/${archivaReleaseVersion}/binaries/apache-archiva-${archivaReleaseVersion}-bin.tar.gz.sha256">sha256</a></td>
+                <td><a href="https://www.apache.org/dist/archiva/${archivaReleaseVersion}/binaries/apache-archiva-${archivaReleaseVersion}-bin.tar.gz.sha512">sha512</a></td>
+                <td><a href="https://www.apache.org/dist/archiva/${archivaReleaseVersion}/binaries/apache-archiva-${archivaReleaseVersion}-bin.tar.gz.asc">asc</a></td>
               </tr>
               <tr>
                 <td></td>
                 <td><a href="[preferred]archiva/${archivaReleaseVersion}/binaries/apache-archiva-${archivaReleaseVersion}-bin.zip">zip</a></td>
-                <td><a href="http://www.apache.org/dist/archiva/${archivaReleaseVersion}/binaries/apache-archiva-${archivaReleaseVersion}-bin.zip.sha256">sha256</a></td>
-                <td><a href="http://www.apache.org/dist/archiva/${archivaReleaseVersion}/binaries/apache-archiva-${archivaReleaseVersion}-bin.zip.sha512">sha512</a></td>
-                <td><a href="http://www.apache.org/dist/archiva/${archivaReleaseVersion}/binaries/apache-archiva-${archivaReleaseVersion}-bin.zip.asc">asc</a></td>
+                <td><a href="https://www.apache.org/dist/archiva/${archivaReleaseVersion}/binaries/apache-archiva-${archivaReleaseVersion}-bin.zip.sha256">sha256</a></td>
+                <td><a href="https://www.apache.org/dist/archiva/${archivaReleaseVersion}/binaries/apache-archiva-${archivaReleaseVersion}-bin.zip.sha512">sha512</a></td>
+                <td><a href="https://www.apache.org/dist/archiva/${archivaReleaseVersion}/binaries/apache-archiva-${archivaReleaseVersion}-bin.zip.asc">asc</a></td>
               </tr>
               <tr>
                 <td>Archiva ${archivaReleaseVersion} WAR</td>
                 <td><a href="[preferred]archiva/${archivaReleaseVersion}/binaries/apache-archiva-${archivaReleaseVersion}.war">war</a></td>
-                <td><a href="http://www.apache.org/dist/archiva/${archivaReleaseVersion}/binaries/apache-archiva-${archivaReleaseVersion}.war.sha256">sha256</a></td>
-                <td><a href="http://www.apache.org/dist/archiva/${archivaReleaseVersion}/binaries/apache-archiva-${archivaReleaseVersion}.war.sha512">sha512</a></td>
-                <td><a href="http://www.apache.org/dist/archiva/${archivaReleaseVersion}/binaries/apache-archiva-${archivaReleaseVersion}.war.asc">asc</a></td>
+                <td><a href="https://www.apache.org/dist/archiva/${archivaReleaseVersion}/binaries/apache-archiva-${archivaReleaseVersion}.war.sha256">sha256</a></td>
+                <td><a href="https://www.apache.org/dist/archiva/${archivaReleaseVersion}/binaries/apache-archiva-${archivaReleaseVersion}.war.sha512">sha512</a></td>
+                <td><a href="https://www.apache.org/dist/archiva/${archivaReleaseVersion}/binaries/apache-archiva-${archivaReleaseVersion}.war.asc">asc</a></td>
               </tr>
               <tr>
                 <td>Archiva ${archivaReleaseVersion} Sources</td>
                 <td><a href="[preferred]archiva/${archivaReleaseVersion}/src/apache-archiva-${archivaReleaseVersion}-src.zip">source zip</a></td>
-                <td><a href="http://www.apache.org/dist/archiva/${archivaReleaseVersion}/src/apache-archiva-${archivaReleaseVersion}-src.zip.sha256">sha256</a></td>
-                <td><a href="http://www.apache.org/dist/archiva/${archivaReleaseVersion}/src/apache-archiva-${archivaReleaseVersion}-src.zip.sha512">sha512</a></td>
-                <td><a href="http://www.apache.org/dist/archiva/${archivaReleaseVersion}/src/apache-archiva-${archivaReleaseVersion}-src.zip.asc">asc</a></td>
+                <td><a href="https://www.apache.org/dist/archiva/${archivaReleaseVersion}/src/apache-archiva-${archivaReleaseVersion}-src.zip.sha256">sha256</a></td>
+                <td><a href="https://www.apache.org/dist/archiva/${archivaReleaseVersion}/src/apache-archiva-${archivaReleaseVersion}-src.zip.sha512">sha512</a></td>
+                <td><a href="https://www.apache.org/dist/archiva/${archivaReleaseVersion}/src/apache-archiva-${archivaReleaseVersion}-src.zip.asc">asc</a></td>
               </tr>
             </tbody>
           </table>
@@ -171,26 +171,26 @@ under the License.
                   <tr>
                     <td>Archiva ${archivaLastSerieVersion} Standalone</td>
                     <td><a href="[preferred]archiva/${archivaLastSerieVersion}/binaries/apache-archiva-${archivaLastSerieVersion}.1-bin.tar.gz">tar.gz</a></td>
-                    <td><a href="http://www.apache.org/dist/archiva/${archivaLastSerieVersion}/binaries/apache-archiva-${archivaLastSerieVersion}.1-bin.tar.gz.md5">md5</a></td>
-                    <td><a href="http://www.apache.org/dist/archiva/${archivaLastSerieVersion}/binaries/apache-archiva-${archivaLastSerieVersion}.1-bin.tar.gz.asc">asc</a></td>
+                    <td><a href="https://www.apache.org/dist/archiva/${archivaLastSerieVersion}/binaries/apache-archiva-${archivaLastSerieVersion}.1-bin.tar.gz.md5">md5</a></td>
+                    <td><a href="https://www.apache.org/dist/archiva/${archivaLastSerieVersion}/binaries/apache-archiva-${archivaLastSerieVersion}.1-bin.tar.gz.asc">asc</a></td>
                   </tr>
                   <tr>
                     <td></td>
                     <td><a href="[preferred]archiva/${archivaLastSerieVersion}/binaries/apache-archiva-${archivaLastSerieVersion}.1-bin.zip">zip</a></td>
-                    <td><a href="http://www.apache.org/dist/archiva/${archivaLastSerieVersion}/binaries/apache-archiva-${archivaLastSerieVersion}.1-bin.zip.md5">md5</a></td>
-                    <td><a href="http://www.apache.org/dist/archiva/${archivaLastSerieVersion}/binaries/apache-archiva-${archivaLastSerieVersion}.1-bin.zip.asc">asc</a></td>
+                    <td><a href="https://www.apache.org/dist/archiva/${archivaLastSerieVersion}/binaries/apache-archiva-${archivaLastSerieVersion}.1-bin.zip.md5">md5</a></td>
+                    <td><a href="https://www.apache.org/dist/archiva/${archivaLastSerieVersion}/binaries/apache-archiva-${archivaLastSerieVersion}.1-bin.zip.asc">asc</a></td>
                   </tr>
                   <tr>
                     <td>Archiva ${archivaLastSerieVersion} WAR</td>
                     <td><a href="[preferred]archiva/${archivaLastSerieVersion}/binaries/apache-archiva-${archivaLastSerieVersion}.war">war</a></td>
-                    <td><a href="http://www.apache.org/dist/archiva/${archivaLastSerieVersion}/binaries/apache-archiva-${archivaLastSerieVersion}.war.md5">md5</a></td>
-                    <td><a href="http://www.apache.org/dist/archiva/${archivaLastSerieVersion}/binaries/apache-archiva-${archivaLastSerieVersion}.war.asc">asc</a></td>
+                    <td><a href="https://www.apache.org/dist/archiva/${archivaLastSerieVersion}/binaries/apache-archiva-${archivaLastSerieVersion}.war.md5">md5</a></td>
+                    <td><a href="https://www.apache.org/dist/archiva/${archivaLastSerieVersion}/binaries/apache-archiva-${archivaLastSerieVersion}.war.asc">asc</a></td>
                   </tr>
                   <tr>
                     <td>Archiva ${archivaLastSerieVersion} Sources</td>
                     <td><a href="[preferred]archiva/${archivaLastSerieVersion}/src/apache-archiva-${archivaLastSerieVersion}-src.zip">source zip</a></td>
-                    <td><a href="http://www.apache.org/dist/archiva/${archivaLastSerieVersion}/src/apache-archiva-${archivaLastSerieVersion}-src.zip.md5">md5</a></td>
-                    <td><a href="http://www.apache.org/dist/archiva/${archivaLastSerieVersion}/src/apache-archiva-${archivaLastSerieVersion}-src.zip.asc">asc</a></td>
+                    <td><a href="https://www.apache.org/dist/archiva/${archivaLastSerieVersion}/src/apache-archiva-${archivaLastSerieVersion}-src.zip.md5">md5</a></td>
+                    <td><a href="https://www.apache.org/dist/archiva/${archivaLastSerieVersion}/src/apache-archiva-${archivaLastSerieVersion}-src.zip.asc">asc</a></td>
                   </tr>
                 </tbody>
               </table>
@@ -201,17 +201,17 @@ under the License.
 
       <subsection name="Previous Versions">
         <p>
-          More releases are available in the <a href="http://archive.apache.org/dist/archiva/">Apache Archiva Archives</a>
-          or prior to the graduation from Maven, in the <a href="http://archive.apache.org/dist/maven/binaries/">Apache Maven Archives</a>.
+          More releases are available in the <a href="https://archive.apache.org/dist/archiva/">Apache Archiva Archives</a>
+          or prior to the graduation from Maven, in the <a href="https://archive.apache.org/dist/maven/binaries/">Apache Maven Archives</a>.
         </p>
       </subsection>
       <subsection name="Verify the integrity of the files">
         <p>
           We recommend that you verify the integrity of the downloaded files using the PGP signatures and SHA, MD5 checksums.
 
-          The PGP signatures can be verified using PGP or GPG. First download the <a href="http://www.apache.org/dist/archiva/KEYS">KEYS</a>
+          The PGP signatures can be verified using PGP or GPG. First download the <a href="https://www.apache.org/dist/archiva/KEYS">KEYS</a>
           as well as the asc signature file for the particular distribution. Make sure you get these files from
-          <a href="http://www.apache.org/dist/archiva">the main distribution directory</a>,
+          <a href="https://www.apache.org/dist/archiva">the main distribution directory</a>,
           rather than from a mirror. <br/>
           Then verify the signatures using:
         </p>
@@ -228,8 +228,8 @@ under the License.
         <p>
           Please use the SHA checksum for verification if available, use MD5 only for the older versions, that have no SHA checksum available.
           To verify the SHA signature on the files, you can use utilities for your platform. A Unix program called sha1sum or sha256sum (md5sum) is included in many
-          Unix distributions. It is also available as part of <a href="http://www.gnu.org/software/coreutils/">GNU Coreutils</a>.
-          Windows users can get binary checksum utility e.g. from <a href="http://www.slavasoft.com/hashcalc/">SlavaSoft</a>.
+          Unix distributions. It is also available as part of <a href="https://www.gnu.org/software/coreutils/">GNU Coreutils</a>.
+          Windows users can get binary checksum utility e.g. from <a href="https://www.slavasoft.com/hashcalc/">SlavaSoft</a>.
         </p>
       </subsection>
     </section>
