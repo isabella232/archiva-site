@@ -90,7 +90,7 @@
       <item name="Get involved"         href="/get-involved.html"/>
       <item name="How we do things"     href="developers/how-we-do-things.html"/>
       <item name="Redback"              href="redback"/>
-      <item name="Redback Components"   href="redback/components"/>
+      <item name="Archiva Components"   href="components"/>
       <item name="Javascript application Architecture" href="/jsui/index.html">
         <item name="Rest service"          href="/jsui/rest.html"/>
         <item name="JS Template loading"   href="/jsui/template-loading.html"/>
@@ -108,6 +108,11 @@
       <item name="Sponsoring Apache" href="http://www.apache.org/foundation/sponsorship.html"/>
       <item name="Thanks" href="http://www.apache.org/foundation/thanks.html"/>
     </menu>
+
+    <breadcrumbs>
+      <item name="Apache" href="https://www.apache.org" />
+      <item name="Archiva" href="/" />
+    </breadcrumbs>
 
     <footer>
       <![CDATA[

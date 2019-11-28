@@ -51,6 +51,8 @@
 
     <siteRepositoryUrl>scm:git:https://gitbox.apache.org/repos/asf/archiva-web-content.git</siteRepositoryUrl>
 
+    <scmPublishBranch>asf-staging</scmPublishBranch>
+
   </properties>
 
   <organization>
@@ -101,7 +103,9 @@
             <ignorePathToDelete>docs**</ignorePathToDelete>
             <ignorePathToDelete>ref**</ignorePathToDelete>
             <ignorePathToDelete>redback**</ignorePathToDelete>
+            <ignorePathsToDelete>components**</ignorePathsToDelete>
           </ignorePathsToDelete>
+          <scmBranch>${scmPublishBranch}</scmBranch>
         </configuration>
         <executions>
           <execution>
@@ -199,6 +203,8 @@
                   <arguments>
                     <argument>-d</argument>
                     <argument>${scmPubCheckoutDirectory}</argument>
+                    <argument>-b</argument>
+                    <argument>${scmPublishBranch}</argument>
                     <argument>${siteRepositoryUrl}</argument>
                   </arguments>
                 </configuration>
