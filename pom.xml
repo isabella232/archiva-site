@@ -51,7 +51,7 @@
 
     <siteRepositoryUrl>scm:git:https://gitbox.apache.org/repos/asf/archiva-web-content.git</siteRepositoryUrl>
 
-    <scmPubCheckoutDirectory>site-content</scmPubCheckoutDirectory>
+    <scmPubCheckoutDirectory>.site-content</scmPubCheckoutDirectory>
     <scmPublishBranch>asf-staging</scmPublishBranch>
     <scmPublishPath>/</scmPublishPath>
 
@@ -80,9 +80,29 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-site-plugin</artifactId>
+        <version>3.7.1</version>
         <configuration>
           <skipDeploy>true</skipDeploy>
-        </configuration>
+          <asciidoc>
+            <!-- optional site-wide AsciiDoc attributes -->
+            <attributes>
+              <icons>font</icons>
+              <source-highlighter>coderay</source-highlighter>
+              <coderay-css>style</coderay-css>
+              <toclevels>2</toclevels>
+            </attributes>
+            <templateDirs>
+              <dir>src/site/slim-templates</dir>
+            </templateDirs>
+          </asciidoc>
+      </configuration>
+      <dependencies>
+        <dependency>
+          <groupId>org.asciidoctor</groupId>
+          <artifactId>asciidoctor-maven-plugin</artifactId>
+          <version>${asciidoctor.maven.plugin.version}</version>
+        </dependency>
+      </dependencies>
         <executions>
           <execution>
             <id>stage-for-scm-publish</id>

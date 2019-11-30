@@ -1,0 +1,182 @@
+= Archiva Site Publishing
+Martin Stockhammer <martin_s@apache.org>
+2019-11-30
+:toc:
+
+== General information about the site publish process
+
+The archiva site is built from multiple different more or less independent modules. The build process
+uses `maven-site-plugin` for generating the static HTML pages and stylesheets and `scm-publish-plugin` for
+publishing the results to the repository.
+
+The generated HTML pages are stored at a git repository:
+https://gitbox.apache.org/repos/asf?p=archiva-web-content.git[`archiva-web-content.git`].
+
+The git repository contains a `.asf.yaml` file that defines the branch `asf-staging` as staging branch. The
+master branch is used by git-pub-sub to publish the official archiva site at https://archiva.apache.org .
+
+If you push something to the `asf-staging` branch you can see the changes immediately at https://archiva.staged.apache.org
+
+The maven site report and publishing plugins are configured to deploy the the asf-staging branch. That means the
+overall publishing process is the following:
+
+- Generate the site content for a module by using the scripts / maven
+- Use the maven publish plugin to push the generated pages to the asf-staging branch of archiva-web-content.git
+- Check the generated content at https://archiva.staged.apache.org/
+- If the result is fine, release the new content by merging the content from `asf-staging` to the `master` branch
+
+For all modules there exists a script that runs all the steps (apart from the check on the staged site). Currently
+the script runs only on Linux / Bash. For details see below.
+
+== Where is site content generated?
+
+The Archiva site is generated from the following components:
+
+[role="bodyTable"]
+|===
+|Component |Content |Git Repository |Path inside Repo |Publish Path |Skript
+
+|Archiva Site
+|Main Pages, like index.html. General information.
+|https://gitbox.apache.org/repos/asf?p=archiva-site.git[`archiva-site.git`]
+|/
+|/
+|`deploySite.sh`
+
+|Archiva Documentation
+|Archiva User Documentation. Archiva Configuration.
+|https://gitbox.apache.org/repos/asf?p=archiva.git[`archiva.git`]
+|/archiva-docs
+|/docs/${project.version}
+|`archiva-docs/deploySite.sh`
+
+|Archiva Reference Documentation
+|Developer documentation for Archiva, API Javadoc pages. Information for each maven module.
+|https://gitbox.apache.org/repos/asf?p=archiva.git[`archiva.git`]
+|/archiva-modules
+|/ref/${project.version}
+|`archiva-modules/deploySite.sh`
+
+|Redback Site
+|Pages for Redback. General information about redback.
+|https://gitbox.apache.org/repos/asf?p=archiva-redback-site.git[`archiva-redback-site.git`]
+|/
+|/redback
+|`deploySite.sh`
+
+|Redback Reference Documentation
+|Developer documentation for Redback, API Javadoc pages. Information for each maven module.
+|https://gitbox.apache.org/repos/asf?p=archiva-redback-core.git[`archiva-redback-core.git`]
+|/
+|/core/${project.version}
+|`deploySite.sh`
+
+|Archiva Component Documentation
+|Information about the Archiva Components
+|https://gitbox.apache.org/repos/asf?p=archiva-components.git[`archiva-components.git`]
+|/
+|/components
+|`deploySite.sh`
+
+|===
+
+
+== Tasks for publishing
+
+=== Using the script (Linux/Bash)
+
+The easiest way is always to use the script `deploySite.sh` in the directory of the corresponding repository.
+
+----
+cd <path inside repo for component>
+./deploySite.sh
+...
+...
+*****************************************
+>>>> Finished the site stage process <<<<
+> You can check the content in the folder target/staging or by opening the following url
+> file:///archiva/archiva-modules/target/staging/ref/3.0.0-SNAPSHOT/index.html
+>
+> If everything is fine enter yes. After that the publish process will be started.
+Do you want to publish (yes/no)? yes
+----
+
+When this output is shown you can check the staging output for this component only on the given path.
+
+If you enter `y` or `yes` here, the content will be pushed to the `asf-staging`-branch at `archiva-web-content.git`
+If you enter any other key, the process will be aborted.
+
+After the page was pushed to the `asf-staging`-branch, you can check the result at https://archiva.staged.apache.org/
+
+[NOTE]
+====
+If you would like to check the page with a local clone of archiva-web-content.git you can run the script with:
+
+ ./deploySite.sh -DsiteRepositoryUrl=scm:git:file:///${path-to-your-local-archiva}/archiva-web-content.git
+====
+
+
+If the result on the staged URL is fine you have to merge the branch to the master branch:
+
+----
+# git clone https://gitbox.apache.org/repos/asf/archiva-web-content.git
+cd archiva-web-content
+git checkout master
+git merge --ff-only asf-staging
+git push
+----
+
+=== Run the process manually
+==== Generating Site Pages for a component
+
+
+The script basically runs
+
+ mvn clean site
+ mvn site:stage
+
+The pom.xml has a plugin definition to checkout the repository as sparse checkout to a local directory `.site-content`
+The patterns for the sparse checkout are stored in the file `git-sparse-checkout-pattern`
+
+The content of the module and all submodules is put to the directory `target/staging/${Component Path}`
+
+
+==== Publishing to the staging branch
+
+This is the part that is run, when you answer `y` or `yes` for publishing.
+
+  mvn scm-publish:publish-scm
+
+This checks the differences in .site-content and pushes the differences to the `asf-staging` branch.
+
+
+== Information about Maven / Script configuration
+
+There are some properties in the pom.xml that are used by the deploySite.sh. You should always make sure, that
+these properties are set to the corresponding values for the given module:
+
+- <scmPubCheckoutDirectory>.site-content</scmPubCheckoutDirectory>: The directory for the sparse checkout
+- <scmPublishBranch>asf-staging</scmPublishBranch>: The staging branch
+- <scmPublishPath>/</scmPublishPath>: The path relative to the base URL where the content is placed
+
+The helper script `checkoutSite.sh` is used for running the sparse checkout of the content.
+
+For multi-module projects the CSS (site.css) is always relative to the module directory. Therefore, we have
+a link to the stylesheet at `/css/site.css` in `site.xml`
+
+
+== Information about site generation
+
+Most content is written in apt and xdoc. New documentation can/should be written in asciidoc. Asciidoc needs some css modification
+to get the styles right. So please check the generated content before publishing it.
+
+For multi-module builds you should add the central `/css/site.css` to the `<head>`-Section in `site.xml`. Because submodules
+include only their own site.css and not the parent stylesheets. This can be done with:
+----
+<head>
+        ...
+        <![CDATA[    <link rel="stylesheet" href="/css/site.css" type="text/css" >]]>
+        ...
+</head>
+----
+

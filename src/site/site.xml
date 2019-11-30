@@ -58,6 +58,9 @@
   </custom>
   <body>
       <head>
+        <!-- The font-awesome is used by asciidoc -->
+        <![CDATA[    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">]]>
+        <!-- Google Analytics -->
         <![CDATA[
         <!-- Google Analytics -->
         <script src='//www.google-analytics.com/analytics.js'></script>
