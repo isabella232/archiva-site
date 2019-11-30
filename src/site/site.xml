@@ -77,8 +77,8 @@
       <item name="Mailing Lists"        href="/mailing-lists.html"/>
       <item name="Security"             href="/security.html"/>
       <item name="Documentation" href="">
-        <item name="Release ${archivaReleaseVersion}" href="http://archiva.apache.org/docs/${archivaReleaseVersion}/"/>
-        <item name="Dev ${archivaCurrentDevVersion}" href="http://archiva.apache.org/docs/${archivaCurrentDevVersion}/"/>
+        <item name="Release ${archivaReleaseVersion}" href="https://archiva.apache.org/docs/${archivaReleaseVersion}/"/>
+        <item name="Dev ${archivaCurrentDevVersion}" href="https://archiva.apache.org/docs/${archivaCurrentDevVersion}/"/>
       </item>
     </menu>
 
@@ -86,8 +86,16 @@
       <item name="Build Apache Archiva" href="developers/building.html"/>
       <item name="Get involved"         href="/get-involved.html"/>
       <item name="How we do things"     href="developers/how-we-do-things.html"/>
-      <item name="Redback"              href="redback"/>
-      <item name="Archiva Components"   href="components"/>
+      <item name="Developer Reference">
+        <item name="Archiva ${archivaReleaseVersion}"
+              href="https://archiva.apache.org/ref/${archivaReleaseVersion}/index.html"/>
+        <item name="Archiva ${archivaCurrentDevVersion}"
+              href="https://archiva.apache.org/ref/${archivaCurrentDevVersion}/index.html"/>
+        <item name="Redback ${redbackCurrentDevVersion}"
+              href="https://archiva.apache.org/redback/core/${redbackCurrentDevVersion}/index.html"/>
+      </item>
+      <item name="Redback"              href="redback/index.html"/>
+      <item name="Archiva Components Project"   href="components/index.html"/>
       <item name="Javascript application Architecture" href="/jsui/index.html">
         <item name="Rest service"          href="/jsui/rest.html"/>
         <item name="JS Template loading"   href="/jsui/template-loading.html"/>
@@ -100,10 +108,10 @@
     </menu>
 
     <menu name="ASF" inherit="bottom">
-      <item name="How Apache Works" href="http://www.apache.org/foundation/how-it-works.html"/>
-      <item name="Foundation" href="http://www.apache.org/foundation/"/>
-      <item name="Sponsoring Apache" href="http://www.apache.org/foundation/sponsorship.html"/>
-      <item name="Thanks" href="http://www.apache.org/foundation/thanks.html"/>
+      <item name="How Apache Works" href="https://www.apache.org/foundation/how-it-works.html"/>
+      <item name="Foundation" href="https://www.apache.org/foundation/"/>
+      <item name="Sponsoring Apache" href="https://www.apache.org/foundation/sponsorship.html"/>
+      <item name="Thanks" href="https://www.apache.org/foundation/thanks.html"/>
     </menu>
 
     <breadcrumbs>
@@ -113,7 +121,7 @@
 
     <footer>
       <![CDATA[
-      <div class="row pull-left">Apache ${project.name}, ${project.name}, Apache, the Apache feather logo, and the Apache ${project.name} project logos are trademarks of The Apache Software Foundation.</div>
+      <div class="row pull-left">Apache Archiva, Archiva, Apache, the Apache feather logo, and the Apache Archiva project logos are trademarks of The Apache Software Foundation.</div>
       <div class="row">
         &nbsp;
       </div>

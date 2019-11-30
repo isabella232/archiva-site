@@ -41,23 +41,25 @@
     <archivaReleaseVersion>2.2.4</archivaReleaseVersion>
     <archivaReleaseDate>30th April 2019</archivaReleaseDate>
     <archivaCurrentDevVersion>3.0.0-SNAPSHOT</archivaCurrentDevVersion>
+    <redbackCurrentDevVersion>3.0.0-SNAPSHOT</redbackCurrentDevVersion>
     <supportedVersions></supportedVersions>
     <unsupportedVersions>1.X</unsupportedVersions>
-    <siteUrl>http://archiva.apache.org/</siteUrl>
+    <siteUrl>https://archiva.apache.org/</siteUrl>
     <site.cache.path>${user.home}</site.cache.path>
-    <scmPubCheckoutDirectory>site-content</scmPubCheckoutDirectory>
 
     <newUiDocVersion>${archivaReleaseVersion}</newUiDocVersion>
 
     <siteRepositoryUrl>scm:git:https://gitbox.apache.org/repos/asf/archiva-web-content.git</siteRepositoryUrl>
 
+    <scmPubCheckoutDirectory>site-content</scmPubCheckoutDirectory>
     <scmPublishBranch>asf-staging</scmPublishBranch>
+    <scmPublishPath>/</scmPublishPath>
 
   </properties>
 
   <organization>
     <name>The Apache Software Foundation</name>
-    <url>http://archiva.apache.org/</url>
+    <url>https://archiva.apache.org/</url>
   </organization>
 
   <scm>
