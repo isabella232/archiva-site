@@ -31,9 +31,11 @@ Building Archiva
 
  [[1]] Check out the source code as described on the {{{../source-repository.html}Source Repository}} page.
 
- [[2]] In the 'parent' directory, execute <<<mvn clean install>>> to build the parent pom. (only needed if we depend on a new parent)
+ [[2]] You may setup a suitable ~/.m2/settings.xml to add the needed repositories.
 
- [[3]] In the 'archiva' directory, execute <<<mvn clean install>>> to build the Archiva modules and distribution.
+ [[3]] In the 'parent' directory, execute <<<mvn clean install>>> to build the parent pom. (only needed if we depend on a new parent)
+
+ [[4]] In the 'archiva' directory, execute <<<mvn clean install>>> to build the Archiva modules and distribution.
 
  []
 
@@ -104,3 +106,53 @@ Running the selenium tests (Web UI tests) locally
 mvn clean install -DmaxWaitTimeInMs=2000 -DseleniumRemote=true -Pci-server -Pit-js -Pchrome -pl :archiva-webapp-test
 +--
 
+
+Maven settings.xml
+
+  You should setup the following repositories in your settings.xml to be able to resolve the dependencies. Sometimes
+  we need to have certain snapshot versions for plugins, so the apache snapshot repository is added.
+
++--
+  <profiles>
+      <profile>
+          <activation>
+              <activeByDefault>true</activeByDefault>
+          </activation>
+          <repositories>
+              <repository>
+                  <id>central</id>
+                  <releases>
+                      <enabled>true</enabled>
+                  </releases>
+                  <snapshots>
+                      <enabled>false</enabled>
+                  </snapshots>
+                  <url>https://repo1.maven.org/maven2</url>
+              </repository>
+          </repositories>
+          <pluginRepositories>
+              <pluginRepository>
+                  <id>central</id>
+                  <releases>
+                      <enabled>true</enabled>
+                  </releases>
+                  <snapshots>
+                      <enabled>true</enabled>
+                  </snapshots>
+                  <url>https://repo1.maven.org/maven2</url>
+              </pluginRepository>
+              <pluginRepository>
+                  <id>apache-snapshot</id>
+                  <releases>
+                      <enabled>false</enabled>
+                  </releases>
+                  <snapshots>
+                      <enabled>true</enabled>
+                  </snapshots>
+                  <url>https://repository.apache.org/content/groups/snapshots</url>
+              </pluginRepository>
+
+          </pluginRepositories>
+       </profile>
+  </profiles>
++--
