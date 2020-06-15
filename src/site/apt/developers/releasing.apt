@@ -74,7 +74,8 @@ Archiva release process
     your settings.xml for {{archiva-repository.releases}}.
 
     Prepare your environment:
-    For Archiva 2.x you have to use JDK 7 and set memory settings.
+    For Archiva 2.x you have to use two different JDKs for the process. JDK 7 is used for the prepare release (compile) 
+    and JDK 8 for uploading (supported SSL versions)
 
 +-------------
 export JAVA_HOME=<PATH_TO_JDK7>
@@ -90,8 +91,14 @@ mvn release:prepare
 +-------------
     Check that it has been properly tagged. The tag name must be.. archiva-[VERSION].
 
-    If all works fine, execute 
+    You can rollback with `mvn release:rollback`.
 
+    If all works fine, set JDK 8 and execute the release:perform task
+
++-------------
+export JAVA_HOME=<PATH_TO_JDK8>
+export PATH=$JAVA_HOME/bin:$PATH
++-------------
 +-------------
 mvn release:perform
 +-------------
@@ -105,8 +112,12 @@ mvn release:perform
 ARCHV="2.2.4" # Enter the new archiva version
 RELEASE_URL="http://archiva-repository.apache.org/archiva/repository/archiva-releases-stage"
 wget ${RELEASE_URL}/org/apache/archiva/archiva-jetty/${ARCHV}/archiva-jetty-${ARCHV}-bin.tar.gz
+wget ${RELEASE_URL}/org/apache/archiva/archiva-jetty/${ARCHV}/archiva-jetty-${ARCHV}-bin.tar.gz.asc
+wget ${RELEASE_URL}/org/apache/archiva/archiva-jetty/${ARCHV}/archiva-jetty-${ARCHV}-bin.zip
+wget ${RELEASE_URL}/org/apache/archiva/archiva-jetty/${ARCHV}/archiva-jetty-${ARCHV}-bin.zip.asc
 # Verify the signatures:
 gpg -v archiva-jetty-${ARCHV}-bin.zip.asc
+gpg -v archiva-jetty-${ARCHV}-bin.tar.gz.asc
 +-------------
 
     The documentation is deployed as part of the process to the final location for review in the vote:
@@ -149,10 +160,11 @@ svn mv https://dist.apache.org/repos/dist/dev/archiva/${ARCHV} https://dist.apac
 # Move also the POM and Redback and Redback Component releases, if there are new ones.
 +-------------
 
+  Merge the archiva-releases-stage to archiva-releases on archiva-repository.apache.org
+
   To sync the jars to Maven Central, you need to merge the repository archiva-releases-stage to "Central Rsync Repository"
 
   Mark the appropriate release version in JIRA as complete.
-
 
   Update the archiva site ({{https://gitbox.apache.org/repos/asf/archiva-site.git}}) for the versions and release notes URL:
 

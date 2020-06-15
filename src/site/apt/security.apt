@@ -36,6 +36,22 @@ Security Vulnerabilities
 
 %{toc|fromDepth=2|toDepth=2}
 
+* {CVE-2020-9495}: Apache Archiva login service is vulnerable to LDAP injection
+
+  By providing special values to the archiva login form a attacker is able to retrieve user attribute data from the connected LDAP server.
+  With certain characters it is possible to modify the LDAP filter used to query the users on the connected LDAP server.
+  By measuring the response time, arbitrary attribute data can be retrieved from LDAP user objects.
+
+  Versions Affected:
+
+    * All versions before 2.2.5
+
+  Mitigation:
+
+    * Upgrade to {{{./download.cgi} Archiva 2.2.5 or higher}}
+
+    * Make sure, that communication between Archiva server and browser is secure by using TLS and only certain users
+       are assigned to admin role.
 
 * {CVE-2019-0213}: Apache Archiva XSS may be stored in central UI configuration
 
