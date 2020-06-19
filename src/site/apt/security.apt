@@ -50,8 +50,6 @@ Security Vulnerabilities
 
     * Upgrade to {{{./download.cgi} Archiva 2.2.5 or higher}}
 
-    * Make sure, that communication between Archiva server and browser is secure by using TLS and only certain users
-       are assigned to admin role.
 
 * {CVE-2019-0213}: Apache Archiva XSS may be stored in central UI configuration
 
